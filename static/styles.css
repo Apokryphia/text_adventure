@@ -3,21 +3,33 @@
     padding: 0;
 }
 
+body {
+    background: url(background.jpg);
+    background-repeat: auto;
+}
+
 /* Base page */
 
 /* Index Page */
 
 /* Start Page */
+.container-start {
+    padding: 40px 0 0;
+    text-align: center;
+    background: url(tavern.jpg)
+}
 
 /* Standart Layout */
 
-#container {
-    padding: 70px 0 0;
+.container {
+    padding: 40px 0 0;
     text-align: center;
 }
 
 .quest-box {
-    background: white;
+    background: url(paper.jpg);
+    color: white;
+    font: italic 22px/30px Verdandi, serif;
     display: inline-block;
     border: solid;
     margin: 20px;
