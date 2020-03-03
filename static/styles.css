@@ -5,21 +5,20 @@
 
 /* Base page */
 
-.nav-margin-bottom {
-    margin: 0 0 70px;
-}
-
 /* Index Page */
+
+/* Start Page */
 
 /* Standart Layout */
 
 #container {
+    padding: 70px 0 0;
     text-align: center;
 }
 
 .quest-box {
+    background: white;
     display: inline-block;
-    background color: white;
     border: solid;
     margin: 20px;
     padding: 20px;
