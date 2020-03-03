@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+
+    <div class="quest-box">
+        <h1>Willkommen Reisender!</h1>
+
+
+        <p>In diesem Spiel geht es darum, einer wunderschönen Dame aus der Patsche zu helfen. Ihr Name ist Candy Antarktis. Bist du bereit?</p>
+        <form method="POST">
+            <div id="radio-selection">
+                <input type="radio" id="option1" name="options" value="option1">
+                <label for="option1">JA!</label><br>
+                <input type="radio" id="option2" name="options" value="option2">
+                <label for="option2">Ne.. lieber nicht..</label><br>
+                <input type="radio" id="option3" name="options" value="option3">
+                <label for="option3">Zeig mir zuerst ein Foto!</label><br><br>
+
+                <p id="submit-button">
+                    <input type="submit" class="btn btn-outline-dark" id="submit" value="Weiter">
+                </p>
+
+            </div>
+        </form>
+
+    </div>
+
+{% endblock %}
+

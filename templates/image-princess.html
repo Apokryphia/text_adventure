@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="quest-box">
+    <h1>Hier ist unsere wunderschöne Prinzessin Antarktis.</h1>
+
+    <div id="picture"><img src="static/princess.png" width="25%" height="25%"></div>
+
+        <h5> Wirst du ihr nun helfen?</h5>
+        <form method="POST">
+            <div id="radio-selection">
+                <input type="radio" id="option1" name="options" value="option1">
+                <label for="option1">Ja, auf jeden Fall! Dieser Schönheit muss geholfen werden!</label><br>
+                <input type="radio" id="option2" name="options" value="option2">
+                <label for="option2">Ehm. Nein.</label><br><br>
+
+                <p id="submit-button">
+                    <input type="submit" class="btn btn-outline-dark" id="submit" value="Weiter">
+                </p>
+
+            </div>
+        </form>
+
+    </div>
+
+
+{% endblock %}

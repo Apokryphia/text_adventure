@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base page */
+
+.nav-margin-bottom {
+    margin: 0 0 70px;
+}
+
+/* Index Page */
+
+/* Standart Layout */
+
+#container {
+    text-align: center;
+}
+
+.quest-box {
+    display: inline-block;
+    background color: white;
+    border: solid;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    min-width: 1000px;
+    max-width: 1000px;
+}
+
+.quest-box h1 {
+    margin: 0 0 40px;
+}
+
+#radio-selection {
+    text-align: left;
+    padding: 10px 60px 0;
+}
+
+#submit-button {
+    margin: 0 0 40px;
+}
+
+#picture {
+    margin: 0 0 20px;
+}
