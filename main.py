@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
+from textadventure import statusfeature
 
 app = Flask(__name__)
 
@@ -13,7 +14,7 @@ def index():
             return redirect(url_for('nein', selected_value=selected_value))
         if selected_value == "option3":
             return redirect(url_for('image_princess', selected_value=selected_value))
-    return render_template("index.html")
+    return render_template("index.html", values=statusfeature.statusbar())
 
 
 # Bild der Prinzessin
@@ -106,7 +107,7 @@ def leave_town():
 Hauptnummer 3
 """
 
-
+# Möglichkeit 3 - Haupt, zum Dorfplatz
 @app.route('/3_town_square', methods=['GET', 'POST'])
 def town_square():
     if request.method == 'POST':
