@@ -17,10 +17,40 @@ body {
 
 /* Base page */
 
-/* Health */
+/* status */
 
-#health p {
+.container-status {
+    text-align: center;
+    margin: 20px;
+}
+
+.status {
+    background-color: #343A40;
+    display: inline-block;
+    border: solid;
+    border-color: white;
+    width: 700px;
+    height: 100px;
+}
+
+
+/* health */
+
+.health {
+    border: solid;
+    border-color: white;
+    margin: 10px;
+    width: 100px;
+    height: 70px;
+}
+
+.health p {
     color: white;
+}
+
+.health img {
+    margin: 10px;
+    float: left;
 }
 
 /* Index Page */
