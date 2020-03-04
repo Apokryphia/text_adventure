@@ -48,7 +48,7 @@ def start():
         if selected_value == "option1":
             return redirect(url_for('leave_tavern', selected_value=selected_value))
         if selected_value == "option2":
-            pass
+            return redirect(url_for('ask_barkeeper', selected_value=selected_value))
         if selected_value == "option3":
             pass
     return render_template('start.html')
@@ -65,6 +65,19 @@ def leave_tavern():
         if selected_value == "option3":
             pass
     return render_template('1.1_leave_tavern.html')
+
+# Möglichkeit 1.2 Wirt fragen
+@app.route('/1.2_ask_barkeeper', methods=['GET', 'POST'])
+def ask_barkeeper():
+    if request.method == 'POST':
+        selected_value = request.form['options']
+        if selected_value == "option1":
+            pass
+        if selected_value == "option2":
+            pass
+        if selected_value == "option3":
+            pass
+    return render_template('1.2_ask_barkeeper.html')
 
 
 if __name__ == '__main__':
