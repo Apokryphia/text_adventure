@@ -39,7 +39,7 @@ def nein():
 / Hauptnummer 1 
 """
 
-
+# begin story / Hauptnummer 1
 @app.route('/start', methods=['GET', 'POST'])
 def start():
     if request.method == 'POST':
@@ -60,7 +60,7 @@ def leave_tavern():
         if selected_value == "option1":
             return redirect(url_for('leave_town', selected_value=selected_value))
         if selected_value == "option2":
-            pass
+            return redirect(url_for('town_square', selected_value=selected_value))
         if selected_value == "option3":
             pass
     return render_template('1.1_leave_tavern.html')
@@ -100,6 +100,24 @@ def leave_town():
         if selected_value == "option3":
             pass
     return render_template('2_leave_town.html')
+
+
+""" ZUM DORFPLATZ
+Hauptnummer 3
+"""
+
+
+@app.route('/3_town_square', methods=['GET', 'POST'])
+def town_square():
+    if request.method == 'POST':
+        selected_value = request.form['options']
+        if selected_value == "option1":
+            pass
+        if selected_value == "option2":
+            pass
+        if selected_value == "option3":
+            pass
+    return render_template('3_town_square.html')
 
 
 if __name__ == '__main__':
