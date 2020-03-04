@@ -13,7 +13,6 @@ def index():
             return redirect(url_for('nein', selected_value=selected_value))
         if selected_value == "option3":
             return redirect(url_for('image_princess', selected_value=selected_value))
-
     return render_template("index.html")
 
 
@@ -26,8 +25,8 @@ def image_princess():
             return redirect(url_for('start', selected_value=selected_value))
         if selected_value == "option2":
             return redirect(url_for('nein', selected_value=selected_value))
-
     return render_template('image-princess.html')
+
 
 # Dead End
 @app.route('/nein')
@@ -50,7 +49,7 @@ def start():
         if selected_value == "option2":
             return redirect(url_for('ask_barkeeper', selected_value=selected_value))
         if selected_value == "option3":
-            pass
+            return redirect(url_for('ask_tavern_person', selected_value=selected_value))
     return render_template('start.html')
 
 # Möglichkeit 1.1 Taverne verlassen
@@ -77,6 +76,11 @@ def ask_barkeeper():
             pass
         if selected_value == "option3":
             pass
+    return render_template('1.2_ask_barkeeper.html')
+
+# Möglichkeit 1.3 Zwielichtige Person in Taverne befragen, keine Auswahlmöglichkeit
+@app.route('/1.3_ask_tavern_person', methods=['GET', 'POST'])
+def ask_tavern_person():
     return render_template('1.2_ask_barkeeper.html')
 
 
