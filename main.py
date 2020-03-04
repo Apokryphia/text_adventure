@@ -81,7 +81,7 @@ def ask_barkeeper():
 # Möglichkeit 1.3 Zwielichtige Person in Taverne befragen, keine Auswahlmöglichkeit
 @app.route('/1.3_ask_tavern_person', methods=['GET', 'POST'])
 def ask_tavern_person():
-    return render_template('1.2_ask_barkeeper.html')
+    return render_template('1.3_ask_tavern_person.html')
 
 
 if __name__ == '__main__':
