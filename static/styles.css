@@ -8,6 +8,13 @@ body {
     background-repeat: auto;
 }
 
+/* Button */
+
+#submit {
+    color: white;
+    border-color: white;
+}
+
 /* Base page */
 
 /* Index Page */

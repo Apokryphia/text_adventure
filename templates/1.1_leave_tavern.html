@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="quest-box">
+        <h1>Du verlässt die Taverne...</h1>
+
+
+        <p> Du findest dich vor der Taverne wieder.</p>
+
+        <form method="POST">
+            <div id="radio-selection">
+                <input type="radio" id="option1" name="options" value="option1">
+                <label for="option1">Möglichkeit1</label><br>
+                <input type="radio" id="option2" name="options" value="option2">
+                <label for="option2">Möglichkeit2</label><br>
+                <input type="radio" id="option3" name="options" value="option3">
+                <label for="option3">Möglichkeit3</label><br><br>
+
+                <p id="submit-button">
+                    <input type="submit" class="btn btn-outline-dark" id="submit" value="Weiter">
+                </p>
+
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+
+{% endblock %}
