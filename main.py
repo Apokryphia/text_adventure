@@ -58,7 +58,7 @@ def leave_tavern():
     if request.method == 'POST':
         selected_value = request.form['options']
         if selected_value == "option1":
-            pass
+            return redirect(url_for('leave_town', selected_value=selected_value))
         if selected_value == "option2":
             pass
         if selected_value == "option3":
@@ -82,6 +82,24 @@ def ask_barkeeper():
 @app.route('/1.3_ask_tavern_person', methods=['GET', 'POST'])
 def ask_tavern_person():
     return render_template('1.3_ask_tavern_person.html')
+
+
+""" DORF VERLASSEN
+Hauptnummer 2
+"""
+
+# Möglichkeit 2 - Haupt , Dorf verlassen
+@app.route('/2_leave_town', methods=['GET', 'POST'])
+def leave_town():
+    if request.method == 'POST':
+        selected_value = request.form['options']
+        if selected_value == "option1":
+            pass
+        if selected_value == "option2":
+            pass
+        if selected_value == "option3":
+            pass
+    return render_template('2_leave_town.html')
 
 
 if __name__ == '__main__':
