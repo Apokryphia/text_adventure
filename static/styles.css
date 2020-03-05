@@ -8,6 +8,11 @@ body {
     background-repeat: auto;
 }
 
+/* nav {
+    border-color: white;
+    border: none none solid none;
+} */
+
 /* Button */
 
 #submit {
@@ -20,36 +25,69 @@ body {
 /* status */
 
 .container-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 20px;
+    padding: 20px 0 20px 0;
 }
 
 .status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #343A40;
-    display: inline-block;
-    border: solid;
+    text-align: center;
+    border: outset;
     border-color: white;
-    width: 700px;
-    height: 100px;
+    width: 500px;
+    height: 80px;
 }
 
 
 /* health */
 
 .health {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid;
     border-color: white;
-    margin: 10px;
-    width: 100px;
-    height: 70px;
+    padding: 2%;
+    width: auto;
+    height: auto;
 }
 
 .health p {
+    margin: 15px 10px 0 0;
     color: white;
 }
 
 .health img {
-    margin: 10px;
+    width: 20%;
+    float: left;
+}
+
+/* money */
+
+.money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-color: white;
+    padding: 2%;
+    width: auto;
+    height: auto;
+}
+
+.money p {
+    margin: 15px 10px 0 0;
+    color: white;
+}
+
+.money img {
+    width: 20%;
     float: left;
 }
 
@@ -75,6 +113,7 @@ body {
     font: italic 22px/30px Verdandi, serif;
     display: inline-block;
     border: solid;
+    border-color: white;
     margin: 20px;
     padding: 20px;
     text-align: center;
