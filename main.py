@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-from textadventure import statusfeature
+import statusfeature
 
 app = Flask(__name__)
 
