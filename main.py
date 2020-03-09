@@ -62,8 +62,6 @@ def leave_tavern():
             return redirect(url_for('leave_town', selected_value=selected_value))
         if selected_value == "option2":
             return redirect(url_for('town_square', selected_value=selected_value))
-        if selected_value == "option3":
-            pass
     return render_template('1.1_leave_tavern.html', values=statusfeature.statusbar())
 
 # Möglichkeit 1.2 Wirt fragen
@@ -74,7 +72,7 @@ def ask_barkeeper():
         if selected_value == "option1":
             pass
         if selected_value == "option2":
-            pass
+            return redirect(url_for('run', selected_value=selected_value))
         if selected_value == "option3":
             pass
     return render_template('1.2_ask_barkeeper.html', values=statusfeature.statusbar())
@@ -83,6 +81,17 @@ def ask_barkeeper():
 @app.route('/1.3_ask_tavern_person', methods=['GET', 'POST'])
 def ask_tavern_person():
     return render_template('1.3_ask_tavern_person.html', values=statusfeature.statusbar())
+
+
+@app.route('/1.2.1_run', methods=['GET', 'POST'])
+def run():
+    if request.method == 'POST':
+        selected_value = request.form['options']
+        if selected_value == "option1":
+            return redirect(url_for('leave_town', selected_value=selected_value))
+        if selected_value == "option2":
+            return redirect(url_for('town_square', selected_value=selected_value))
+    return render_template('1.2.1_run.html', values=statusfeature.statusbar())
 
 
 """ DORF VERLASSEN
